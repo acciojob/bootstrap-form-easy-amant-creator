@@ -1,5 +1,15 @@
-.intern{
-	/* display:flex;
-	justify-content:space-evenly;
-} */
-/* Your CSS Code here. */
+.was-validated :invalid,
+        input:invalid,
+        select:invalid {
+            border-color: #dc3545;
+        }
+
+        input:invalid ~ .invalid-feedback,
+        select:invalid ~ .invalid-feedback,
+        .form-check-input:invalid ~ .invalid-feedback {
+            display: block;
+        }
+
+        .invalid-feedback {
+            display: none;
+        }
